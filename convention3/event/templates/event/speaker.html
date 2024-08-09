@@ -1,0 +1,6 @@
+<h1>Welcome our speakers</h1>
+{% if user.is_authenticated %}
+    <li><a  href="{% url "logout_user" %}">Logout</a></li> 
+{% else %}
+     <li><a  href="{% url "login_user" %}">Login</a></li> 
+{% endif %}   
